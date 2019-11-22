@@ -14,3 +14,4 @@ RUN apk --no-cache add nodejs nodejs-npm docker
 RUN apk --no-cache add bash rsync \ 
   && wget -q -O - https://piccolo.link/sbt-${SBT_VERSION}.tgz | tar xz -C /opt
 
+ENV PATH="/opt/sbt/bin:${PATH}"
